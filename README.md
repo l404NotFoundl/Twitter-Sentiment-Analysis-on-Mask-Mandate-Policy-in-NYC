@@ -25,14 +25,12 @@
 
 
 ## Introduction
----
 
 * Tracking public health trends and identifying peaks of public concern are crucial tasks for researchers. Moreover, monitoring such concerns may not be cost-effective and expensive to perform with traditional surveillance systems and have limited coverage and expected delays. Using Twitter user data to understand public health trends is a method used to gain insights on the public’s perception of health crises.
 * Sentiment analysis is a natural language processing application and the goal of its use is to provide an automatic classification of the sentiments in the unstructured text data. In our study, the objective was to extract Twitter data and use it to conduct sentiment analysis on the public's general trends, opinions and perceptions on Covid-19 protocols such as the mask mandate in NYC.
 
 
 ## Method
----
 
 ### Dataset introduction
 - The dataset we used in our project was extracted from Twitter using the API provided by the Twitter Developer Account. The dataset includes 5 features: Text, Tag, Fav_count, Ret_count, and Time_created. The Text feature is the tweet text extracted by using a specific query. The Tag feature contains the labels that are annotated by the human annotators. The “1”s in the Tag section represent a “Positive” sentiment, whereas the “0”s in the Tag section represent “Negative” sentiment. Those labels are used as the Gold Standard for us to train and test the classifier models later. The Fav_count stands for the favorite count, i.e. how many likes this tweet has. The favorite count is not very useful when conducting the sentiment analysis on tweets text data. However, they can be used to do further data analysis on how the favorite counts affect the result of the labeling. Next, the Ret_count stands for the retweet count, which was not important in this study. The Time_created represents the time the tweet was created. The times that are included in this feature are formatted in UTF – 8 frames in python.
@@ -76,7 +74,6 @@
 
 
 ## Result
----
 
 ### BernoulliNB
 
@@ -116,7 +113,6 @@
 ![](https://i.imgur.com/AIbI2Mg.png) [tSNE for KNN]
 
 ## Limitations
----
 
 * There are several limitations to our project. In the first instance, the size of the dataset had a direct impact on the performance of our algorithms. It is possible that increasing the amount of training data will enhance accuracy 3. In our dataset, there are only 95 annotated records, which only gives the classifiers a very limited amount of training data. In another study conducted in 2021, the researchers collected the unique tweets from March 11, 2020 (the date that World Health Organization declared the COVID-19 pandemic) to January 31, 2021. Their dataset contains 1,499,421 unique tweets from 583,499 different users. Their prediction model successfully extracted a Positive trend on the public acceptance of the COVID-19 vaccines in November 2020 when Pfizer announced that their vaccines have 90% efficiency 4. Based on the comparison of the two studies, we are aware that in order to reduce the estimation variance and have better predictive performance, it is critical to extract and annotate more Twitter text data from a broader time frame to fit the classifiers before we conduct any further sentiment analysis 5.
 
@@ -126,13 +122,11 @@
 
 
 ## Conclusion
----
 
 * Sentiment analysis on social media platforms is an effective method to assess public opinions with rising public health trends. COVID-19 presented a lot of challenging public health issues that have been studied and helped in the understanding of people's perceptions and opinions. People's reactions and perception of emerging public health guidelines and policies should be studied and monitored in order to assess the policies compliance and develop appropriate measures to raise awareness and improve people compliance. Currently, policies related to the COVID-19 pandemic, such as Mask mandate require strict society compliance to achieve its aim. We believe that understanding society's perception will help policymakers and government leaders raise public awareness and assess the people's compliance. Moreover, Twitter provides real-time and accessible data to make such analysis and it's widely used among society, making it a valuable tool in doing public health research. This data needs to be analyzed and annotated properly to produce valuable insights.
 
 
 ## Reference
----
 
 1.	Ji X, Chun SA, Wei Z, Geller J. Twitter sentiment classification for measuring public health concerns. Soc Netw Anal Min. 2015;5(1):13. doi:10.1007/s13278-015-0253-5
 
