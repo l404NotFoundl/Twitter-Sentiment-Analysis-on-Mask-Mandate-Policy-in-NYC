@@ -1,3 +1,5 @@
+![WCM_PopulationHealthSciences_LOGO_HZSS1L_CLR_RGB](https://user-images.githubusercontent.com/70513470/180664223-7268a759-d544-4a6b-919f-b6c70f10ed23.png)
+
 # Twitter-Sentiment-Analysis-on-Mask-Mandate-Policy-in-NYC
 ###### __Author__: Abdullah Altammami; Jing Gao; Nathanael George
 ###### __*Weill Cornell Graduate School of Medical Sciences, New York, United States*__
